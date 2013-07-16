@@ -1,0 +1,57 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Categories" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Categories">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CategoryID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+                <xs:element name="CategoryName">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Categories>
+    <CategoryID>1</CategoryID>
+    <CategoryName>手机</CategoryName>
+  </Categories>
+  <Categories>
+    <CategoryID>2</CategoryID>
+    <CategoryName>MP3/4</CategoryName>
+  </Categories>
+  <Categories>
+    <CategoryID>3</CategoryID>
+    <CategoryName>U盘</CategoryName>
+  </Categories>
+  <Categories>
+    <CategoryID>4</CategoryID>
+    <CategoryName>存储卡</CategoryName>
+  </Categories>
+  <Categories>
+    <CategoryID>5</CategoryID>
+    <CategoryName>项链</CategoryName>
+  </Categories>
+  <Categories>
+    <CategoryID>6</CategoryID>
+    <CategoryName>手链</CategoryName>
+  </Categories>
+  <Categories>
+    <CategoryID>7</CategoryID>
+    <CategoryName>耳环</CategoryName>
+  </Categories>
+  <Categories>
+    <CategoryID>8</CategoryID>
+    <CategoryName>发饰</CategoryName>
+  </Categories>
+</NewDataSet>

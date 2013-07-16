@@ -1,0 +1,38 @@
+﻿*{
+	font-family: Courier New;
+	font-size: 10pt;
+}
+body{
+	margin: 0px;
+	padding: 20px;
+}
+th{
+	text-align: left;
+}
+.Table{
+	padding: 8px;
+}
+
+
+/*---------- GridVew Style -------------- */
+.GridView{
+	color: #333333;
+	border: solid 1px #D0D0D5;
+	width: 98%
+}
+.GridView_HeaderStyle{
+	background-color: #5D7B9D;
+	font-weight: bold;
+	color: #fff;
+	height: 22px;
+}
+.GridView_RowStyle{
+	background-color: #F7F6F3;
+	color: #333333;
+	height: 22px;
+}
+.GridView_AlternatingRowStyle{
+	background-color: #fff;
+	color: #284775;
+	height: 22px;
+}

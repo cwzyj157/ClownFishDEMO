@@ -1,0 +1,34 @@
+﻿http://www.cnblogs.com/fish-li/archive/2012/07/17/ClownFish.html
+
+ClownFish.dll 版本日志，以FileVersion为准。
+
+1.2.2013.622
+========================================
+1. DbContext增加CreateCommand重载方法，支持传入CPQuery对象
+2. DbContext增加FillDataSet重载方法，允许不指定表名。
+
+
+1.2.2013.316
+========================================
+1. 解决从DataReader读取char类型问题。（SqlDataReader不支持char）
+
+
+1.2.2013.228
+========================================
+1. CPQuery增加Format方法。
+2. CPQuery增加From方法。
+3. CPQuery删除了一些重载，增加SetEvalNameDelegate方法用于指定计算参数名的委托。
+
+
+1.2.2012.919
+========================================
+1. DataConverter.ExcelToTable()增加了一个重载方法
+2. 将DbHelper新增的对CPQuery支持方法改为扩展方法。
+
+
+1.1.2012.908
+========================================
+1. DbHelper中的inputParams允许接收IDictionary对象。
+2. 纠正了可能存在的不兼容性问题。
+3. 新增CPQuery，解决拼接SQL查询的问题。
+4. StringExtensions，为string增加了几个的扩展方法。

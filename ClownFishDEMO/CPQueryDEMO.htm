@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CPQueryDEMO - http://www.cnblogs.com/fish-li/</title>
+    <link type="text/css" href="/css/StyleSheet.css" rel="Stylesheet" />
+    <script type="text/javascript" src="/js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.form.js"></script>
+    
+<style type="text/css">
+input, select { width: 120px;}
+</style>
+</head>
+
+<body>
+<table style="width: 100%; height: 100%"><tr>
+<td style="width: 260px; vertical-align: top;">
+<form id="form1" action="/AjaxCpQuery/DEMO.cspx" method="post">
+	<fieldset><legend>过滤条件</legend>
+	<table cellpadding="2" cellspacing="1">
+		<tr><td>数据库种类</td><td><select name="database">
+			<option value="access" selected="selected">Access</option>
+			<option value="mysql">MySQL</option>
+			<option value="sqlserver">SQL SERVER</option>
+			<option value="sqlite">SQLite</option>
+			</select></td></tr>
+		<tr><td>ProductID =</td><td><input type="text" name="ProductID" value="" /></td></tr>
+		<tr><td>CategoryID =</td><td><input type="text" name="CategoryID" value="3" /></td></tr>
+		<tr><td>Name like</td><td><input type="text" name="ProductName" value="金士顿%" /></td></tr>
+		<tr><td>Unit =</td><td><input type="text" name="Unit" value="个" /></td></tr>
+		<tr><td>UnitPrice >=</td><td><input type="text" name="UnitPrice" value="20" /></td></tr>
+		<tr><td>Quantity >=</td><td><input type="text" name="Quantity" value="5" /></td></tr>
+		<tr><td colspan="2" style="text-align: right"><input type="submit" value="执行查询" /></td></tr>
+	</table></fieldset></form>
+</td>
+<td id="tdOutput"></td>
+</tr>
+</table>
+
+
+<script type="text/javascript">
+$(function() {
+	$('#form1').ajaxForm({
+		target: '#tdOutput'
+	});
+});
+</script>
+</body>
+</html>

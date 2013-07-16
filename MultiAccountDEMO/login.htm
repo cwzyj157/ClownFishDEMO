@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>登录与帐套选择 - http://www.cnblogs.com/fish-li/</title>
+    <link type="text/css" href="/css/StyleSheet.css" rel="Stylesheet" />
+</head>
+<body>
+
+<form action="/AjaxLogin/Login.cspx" method="post" >
+	<table cellpadding="2" cellspacing="1" >
+	<tr><td colspan="2" style="height: 35px"><b>用户登录</b></td></tr>
+	<tr><td style="width: 70px">用户名</td>
+		<td><input type="text" name="username" style="width: 300px" value="fish li" /></td></tr>
+	<tr><td>密码</td>
+		<td><input type="password" name="password" style="width: 300px" value="aaaaaaaaaaa" /></td></tr>
+	<tr><td>帐套名</td><td> <!--这里采用硬编码的方式写死二个帐套名称-->
+		<label><input type="radio" name="database" value="AccountBook1" checked="checked" />帐套１</label>
+		<span style="padding-left: 50px"></span>
+		<label><input type="radio" name="database" value="AccountBook2" />帐套2</label>
+	</td></tr>
+	<tr><td></td><td><input type="submit" name="btnLogin" value="确定" /></td></tr>
+	</table>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ClownFishDEMO - http://www.cnblogs.com/fish-li/</title>
+    <link type="text/css" href="/css/StyleSheet.css" rel="Stylesheet" />
+    <script type="text/javascript" src="/js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="/js/default.js"></script>
+</head>
+<body>
+
+<fieldset style="height: 530px; width: 230px; float: left;">
+<legend>功能演示</legend><div style="line-height: 150%">
+	<a href="javascript:void(0)" id="btnSimpleCRUD">CRUD的基本操作 SQLSERVER</a><br />
+	<span id="spanMySql" style="display: none;">
+		<a href="javascript:void(0)" id="btnSimpleCRUD_MySql">CRUD的基本操作 MySql SP</a><br />
+		<a href="javascript:void(0)" id="btnSimpleCRUD_MySqlXCmd">CRUD的基本操作 MySql XmlCmd</a><br />
+	</span>
+	<a href="javascript:void(0)" id="btnSimpleCRUD_Access">CRUD的基本操作 Access</a><br />
+	<a href="javascript:void(0)" id="btnSimpleCRUD_SQLite">CRUD的基本操作 SQLite</a><br />
+	<a href="javascript:void(0)" id="btnGetPagedList">加载一个分页列表</a><br />
+	<a href="javascript:void(0)" id="btnLoadNestModel">加载嵌套实体</a><br />
+	<a href="javascript:void(0)" id="btnShareConnection">多个业务层之间共用连接</a><br />
+	<a href="javascript:void(0)" id="btnDataTable">查询结果到DataTable</a><br />
+	<a href="javascript:void(0)" id="btnDataSet">查询结果到DataSet</a><br />
+	<a href="javascript:void(0)" id="btnLoadDataTable">从DataTable中加载实体列表</a><br />
+	<a href="javascript:void(0)" id="btnLoadFromXmlFile">从XML文件中加载实体列表</a><br />
+	<a href="javascript:void(0)" id="btnGetXmlCommand">Get XmlCommand</a><br />
+	<a href="CPQueryDEMO.htm" target="_blank">Goto CPQueryDEMO</a>
+</div>
+</fieldset>
+
+<fieldset style="height: 530px;">
+<legend>输出消息</legend>
+<div id="divOutput" style="overflow: scroll; height: 515px;">
+<p><b>注意事项</b></p>
+<p>1. 请务必在测试之前配置好正确的连接字符串。</p>
+<p>连接字符串的配置在web.config中：</p>
+<pre class="code">
+<span style="color:blue">&lt;</span><span style="color:#a31515">connectionStrings</span><span style="color:blue">&gt;
+    &lt;</span><span style="color:#a31515">clear</span><span style="color:blue">/&gt;
+    &lt;</span><span style="color:#a31515">add </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">MyNorthwind_MSSQL</span>"
+        <span style="color:red">connectionString</span><span style="color:blue">=</span>"<span style="color:blue">server=localhost\sqlexpress;database=MyNorthwind;Integrated Security=SSPI;</span>"
+        <span style="color:red">providerName</span><span style="color:blue">=</span>"<span style="color:blue">System.Data.SqlClient</span>"<span style="color:blue">/&gt;
+    
+    &lt;</span><span style="color:#a31515">add </span><span style="color:red">name</span><span style="color:blue">=</span>"<span style="color:blue">MyNorthwind_MySql</span>" 
+         <span style="color:red">connectionString</span><span style="color:blue">=</span>"<span style="color:blue">server=127.0.0.1;database=MyNorthwind;uid=root;pwd=fish;</span>" 
+         <span style="color:red">providerName</span><span style="color:blue">=</span>"<span style="color:blue">MySql.Data.MySqlClient</span>"<span style="color:blue">/&gt;
+&lt;/</span><span style="color:#a31515">connectionStrings</span><span style="color:blue">&gt;</span>
+</pre>
+<p></p>
+<p>2. 示例程序所需的数据库文件以及创建脚本在DB目录下，请在运行测试前配置。</p>
+<p>&nbsp;&nbsp;MySql的演示脚本: DB\MyNorthwind_MySql_Dump.sql ,请在运行MySql演示前安装MySQL Connector/Net组件。</p>
+</div>
+</fieldset>
+
+</body>
+</html>

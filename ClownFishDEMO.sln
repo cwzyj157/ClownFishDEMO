@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ClownFishDEMO", "ClownFishDEMO", "{31256873-8819-4740-9D8D-B3F600076DCA}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		ProjectReferences = ""
+		Debug.AspNetCompiler.VirtualPath = "/ClownFishDEMO"
+		Debug.AspNetCompiler.PhysicalPath = "ClownFishDEMO\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ClownFishDEMO\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ClownFishDEMO"
+		Release.AspNetCompiler.PhysicalPath = "ClownFishDEMO\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ClownFishDEMO\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51028"
+		VWDDynamicPort = "false"
+		VWDVirtualPath = "/"
+		DefaultWebSiteLanguage = "Visual C#"
+		StartServerOnDebug = "false"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerformanceTestApp", "PerformanceTestApp\PerformanceTestApp.csproj", "{72D41240-DA7D-4FA9-A017-8C1AFEDD4E65}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MultiAccountDEMO", "MultiAccountDEMO", "{CB48872E-9FA2-4EC4-9BCE-3768AE44615E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/MultiAccountDEMO"
+		Debug.AspNetCompiler.PhysicalPath = "MultiAccountDEMO\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\MultiAccountDEMO\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/MultiAccountDEMO"
+		Release.AspNetCompiler.PhysicalPath = "MultiAccountDEMO\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\MultiAccountDEMO\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51029"
+		VWDDynamicPort = "false"
+		VWDVirtualPath = "/"
+		DefaultWebSiteLanguage = "Visual C#"
+		StartServerOnDebug = "false"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31256873-8819-4740-9D8D-B3F600076DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31256873-8819-4740-9D8D-B3F600076DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31256873-8819-4740-9D8D-B3F600076DCA}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{31256873-8819-4740-9D8D-B3F600076DCA}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{72D41240-DA7D-4FA9-A017-8C1AFEDD4E65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72D41240-DA7D-4FA9-A017-8C1AFEDD4E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72D41240-DA7D-4FA9-A017-8C1AFEDD4E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72D41240-DA7D-4FA9-A017-8C1AFEDD4E65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB48872E-9FA2-4EC4-9BCE-3768AE44615E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB48872E-9FA2-4EC4-9BCE-3768AE44615E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB48872E-9FA2-4EC4-9BCE-3768AE44615E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB48872E-9FA2-4EC4-9BCE-3768AE44615E}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

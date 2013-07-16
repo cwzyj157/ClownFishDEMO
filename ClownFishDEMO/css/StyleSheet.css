@@ -1,0 +1,27 @@
+﻿* {
+	font-family: 'Courier New' , Courier, monospace, 宋体;
+	font-size: 10pt;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+}
+legend {
+	color: #FF3399;
+	font-weight: bold;
+}
+fieldset{
+	margin-bottom: 10px;
+	padding: 7px;
+	border-color: #eee;
+}
+form{
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
